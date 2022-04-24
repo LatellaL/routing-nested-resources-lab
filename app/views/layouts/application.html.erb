@@ -7,8 +7,8 @@
   </head>
   <body>
     <% flash.each do |name, msg| -%>
-      <%= content_tag :div, msg, class: name %>
-    <% end -%>
+      <h3 style='color:red'><%= content_tag :div, msg, class: name %></h3>
+    <% end %>
     <%= yield %>
   </body>
 </html>
